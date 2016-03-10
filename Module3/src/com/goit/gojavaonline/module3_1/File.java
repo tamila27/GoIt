@@ -1,9 +1,13 @@
 package com.goit.gojavaonline.module3_1;
 
-public class File {
+public abstract class File {
     private String name;
     private String path;
     private int size;
+
+    public File (String name){
+        setName(name);
+    }
 
     public String getName() {
         return name;
@@ -29,12 +33,7 @@ public class File {
         this.size = size;
     }
 
-    public void write(Object object){
+    public abstract void write(Object object);
 
-    }
-
-    public Object read(){
-        Object object = new Object();
-        return object;
-    }
+    public abstract Object read();
 }

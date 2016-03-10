@@ -1,6 +1,6 @@
 package com.goit.gojavaonline.module3_3;
 
-public class MusicalInstrument {
+public abstract class MusicalInstrument {
     private int id;
     private float price;
 
@@ -19,4 +19,5 @@ public class MusicalInstrument {
     public void setPrice(float price) {
         this.price = price;
     }
+    public abstract MusicalInstruments getMusicalInstrumentName();
 }
